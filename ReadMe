@@ -1,0 +1,24 @@
+# Identity Service
+
+A Spring Boot application with MongoDB backend and Swagger/OpenAPI documentation.
+
+## Prerequisites
+
+- Java 21  
+- MongoDB running on `localhost:27017`  
+- Robo 3T (or another MongoDB GUI) to browse data  
+
+## Build & Run
+
+```bash
+./gradlew clean build
+./gradlew bootRun
+
+## API Documentation (Swagger UI)
+Swagger UI
+http://localhost:8080/swagger-ui.html
+or
+http://localhost:8080/swagger-ui/index.html
+
+Raw OpenAPI JSON
+http://localhost:8080/v3/api-docs
