@@ -1,0 +1,15 @@
+# src/main/resources/application.yml
+
+spring:
+  application:
+    name: identity-service
+
+  data:
+    mongodb:
+      # Tries env MONGODB_URI first, otherwise falls back to localhost:27017/identity
+      uri: "${MONGODB_URI:mongodb://localhost:27017/identity}"
+      # Automatically create any indexes you’ve declared on your @Document classes
+      auto-index-creation: true
+
+server:
+  port: 8080
