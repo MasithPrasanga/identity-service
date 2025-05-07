@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public enum ExceptionMessage {
+public enum ExceptionName {
 
-	USER_FOUND("user found");
+	USER_FOUND("User Found");
 
-	private String description;
+	private String exceptionName;
 
 }

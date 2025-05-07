@@ -9,7 +9,7 @@ public class IdentityException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	private String errorCode;
+	private String exceptionName;
 	private String description;
 	private HttpStatus httpStatusCode;
 
@@ -17,9 +17,9 @@ public class IdentityException extends RuntimeException {
 		super();
 	}
 
-	public IdentityException(String errorCode, String description, HttpStatus httpStatusCode) {
+	public IdentityException(String exceptionName, String description, HttpStatus httpStatusCode) {
 		super(description);
-		this.errorCode = errorCode;
+		this.exceptionName = exceptionName;
 		this.description = description;
 		this.httpStatusCode = httpStatusCode;
 	}
